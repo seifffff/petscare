@@ -1,0 +1,101 @@
+
+<html lang="en">
+<head >
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home.css">
+        <script src="https://kit.fontawesome.com/5bf8f9df2f.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="./images/logo/icons8-paw-50.png" type="image/svg+xml">
+        <title>Caring</title>
+</head>
+<div class="logo">
+  <header>
+    <a href="homepage.html"><img src="./images/logo-no-background.png" alt="logo"></a>
+  </header>
+</div>
+<form method="post" action="./PHP/caring.php">
+    <div class="form-section">
+      <div class="form-row">
+        <label for="first-name">User Name:</label>
+        <input type="text"  name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="last-name">Pets Type:</label>
+        <input type="text"  name="pet" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email"  name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="phone">Phone Number:</label>
+        <input type="tel"  name="num" required>
+      </div>
+    </div>
+      
+    <div class="form-section">
+      
+      <div class="form-row datetime-visible">
+        <label for="pick-up-date">Caring Date and Time:</label>
+        <input type="datetime-local"  name="date">
+      <div class="datetime-invisible">
+        <input type="datetime-local"   name="date"></div>
+    </div>
+      
+      <div class="form-row">
+        <label for="pick-up-location">Caring Location:</label>
+        <input type="text"  name="location" required>
+      </div>
+      <div class="form-row">
+        <label for="drop-off-location">Drop Off Location:</label>
+        <input type="text"  name="drop-location" required>
+      </div>
+      <div class="form-row">
+        <label for="num-persons">Number of Pets:</label>
+        <input type="number"  name="pet-qty" required>
+        
+      </div>
+    </div>
+
+    
+      <input type="submit" value="submit" class="x"></input>
+    </div>
+
+
+</form>
+
+<footer class="footer">
+  <div class="container">
+    <div class="contact-info">
+      <h3>Contact Info</h3>
+      <p>
+        <i class="fa fa-phone"></i> +1 123 456 7890
+      </p>
+      <p>
+        <i class="fa fa-instagram"></i> @petscare
+      </p>
+      <p>
+        <i class="fa fa-twitter"></i> @pets.care
+      </p>
+      <p>
+        <i class="fa fa-envelope"></i> petscare@mail.com
+      </p>
+    </div>
+    <div class="info">
+      <h3>Information</h3>
+      <ul>
+        <p style="font-size: 14px;"><i>Every booking with us comes with our 100% guarantee<br> of quality care, fun and safe time for your
+          pets.<br> If you're not happy, neither are we!</i></p>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+    <div class="logo">
+      <a href="./homepage.html" ><img src="./images/logo/pets-care-website-favicon-color.png" alt="Company Logo"></a>
+    </div>
+  </div>
+</footer>
+
+</html>
+  

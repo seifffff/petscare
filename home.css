@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+.fa {
+  color: pink;
+}
+.logo{
+  position: relative;
+  top: 5px;
+  
+
+}
+.logo:hover{
+cursor: pointer;
+}
+
+.sub{
+  position: relative;
+  top: 50%;
+  left: 90%;
+  cursor: pointer;
+}
+.header{
+  box-shadow: 0px 2px 30px rgba(250, 245, 245, 0.946);
+  padding: 20px;
+}
+header img{
+  position: relative;
+  top: -5%;  
+  left: -140%;
+  width: 300px;
+  height: 70px;
+  z-index: 10;     
+}
+
+
+body {
+	align-items: center;
+	background-color: var(--white);
+	background: url("https://www.wallpaperup.com/uploads/wallpapers/2013/12/16/196877/701f6ca2e7ffcffa65c611bd9607453f-700.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	height: 100vh;
+	place-items: center;
+}
+
+
+form {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color:#094b7e;
+  color: #fdfbfb;
+  border-radius:15px;
+  padding:20px; 
+  gap:20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: "Montserrat";
+}
+.x{
+  width: 20%;
+  color: white;
+  cursor: pointer;
+  background-color: #094b7e;
+}
+.x:hover{
+  color: black;
+  background-color: whitesmoke;
+}
+
+.form-section{
+  display:flex;
+  cursor: pointer;
+/*   flex-flow: row wrap; */
+  justify-content: space-between;
+}
+
+/* .datetime-visible{
+  position:relative; 
+  z-index: 1;
+} */
+
+.datetime-invisible{
+/*   position:absolute;
+   top: 22.5px;
+  left: 0;
+  z-index: -1; */
+/*   visibility:hidden; */
+  display:none;
+}
+
+.form-row {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size:13px;
+}
+
+input {
+  display: block;
+  width: 100%;
+/*   padding: 0.5rem; */
+  padding:0.5rem 0;
+  font-size: 1rem;
+  border: 1px solid #e7e6e6;
+  border-radius: 0.25rem;
+}
+
+/* https://stackoverflow.com/questions/4603408/how-to-select-3rd-div-which-has-specific-css-class */
+/* form div:nth-of-type(3) {
+    margin-right: auto;
+} */
+
+.form-section:nth-of-type(1),.form-section:nth-of-type(2){
+  margin:auto;
+}
+
+.form-section:nth-of-type(3){
+  margin-right:auto;
+}
+
+input[type="datetime-local"] {
+    all: unset;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0;
+    width: 100%;
+    border-radius: 0.25rem;
+/*     padding-inline-start: 0.8px; */
+    width:184px;
+  background:#fcf8f8;
+  color:black;
+}
+
+/* input[type="text"] {
+    width:184px;
+} */
+
+button{
+  background-color:lightpink;
+  color: #000;;
+  border:none;
+  border-radius:5px; 
+  padding:7.5px 10px;
+  font-weight:600;
+  cursor:pointer;
+  font-family: "Montserrat";
+}
+
+
+@media (min-width: 768px) {
+/*   form {
+    flex-wrap: nowrap;
+  } */
+}
+  .form-row {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+  
+
+@media (max-width: 768px) {
+  .form-section{
+    flex-flow: row wrap;
+  }
+
+  input[type="datetime-local"] {
+    width:100%;  
+  }
+}
+.footer {
+  background: #333;
+  position: relative;
+  top: 80%;
+  color: #fff;
+  padding: 10px;
+  padding-left: 5rem;
+  width: 100%;
+
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .contact-info, 
+.footer .info {
+  flex: 1;
+}
+
+.footer .logo {
+  width: 150px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 0.5rem;  
+}
+
+.footer a {
+  color: #fff;
+}
+.footer h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer a:hover {
+  color: #aaa;
+}

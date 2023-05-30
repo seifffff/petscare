@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5bf8f9df2f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/logo/icons8-paw-50.png" type="image/svg+xml">
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="host.css">
+
+    <title>Login & Registration Form</title>
+</head>
+<div class="logo">
+    <header>
+        <a href="homepage.html"><img src="./images/logo-no-background.png" alt="logo"></a>
+    </header>
+</div>
+
+<body>
+
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link">Signup Now</a>
+                    </span>
+                </div>
+                <div class="login-signup">
+                    <span class="text">
+                        <a href="./screen.html" class="text signup-link">Register</a>
+                    </span>
+                </div>
+            </div>
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+                <form action="./PHP/host.php" method="post">
+                    <div class="input-field">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="email" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="tel" name="phone" placeholder="Enter phone number" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="pass" class="password" placeholder="Create a password" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <label for="myfile">Upload Your Personal ID:</label>
+                    <input type="file" id="myfile" name="Upload">
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                        </div>
+                    </div>
+                    <div class="input-field button">
+                        <input type="submit" value="Sign-up">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="cont">
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p>
+                    <i class="fa fa-phone"></i> +1 123 456 7890
+                </p>
+                <p>
+                    <i class="fa fa-instagram"></i> @petscare
+                </p>
+                <p>
+                    <i class="fa fa-twitter"></i> @pets.care
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i> petscare@mail.com
+                </p>
+            </div>
+            <div class="info">
+                <h3>Information</h3>
+                <ul>
+                    <p style="font-size: 14px;"><i>Every booking with us comes with our 100% guarantee<br> of quality
+                            care, fun
+                            and safe time for your
+                            pets.<br> If you're not happy, neither are we!</i></p>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="./homepage.html"><img src="./images/logo/pets-care-website-favicon-color.png"
+                        alt="Company Logo"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="host.js"></script>
+</body>
+
+</html>

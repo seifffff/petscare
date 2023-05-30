@@ -1,0 +1,79 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk26EqAqwGkfcM-Qt4XUaXrGS6WUOPcKE&libraries=places&callback=initMap"
+    async defer></script>
+  <link rel="stylesheet" href="trip.css">
+  <link rel="icon" href="./images/logo/icons8-paw-50.png" type="image/svg+xml">
+  <title>Trip</title>
+</head>
+
+<body>
+  onload="initializeMap()">
+  <div class="container">
+    <div>
+      <div id="map"></div>
+    </div>
+  </div>
+  <div id="bookingform">
+    <div class="startDot"></div>
+    <input class="text" id="start_location_id" placeholder="Enter Pick Up Location">
+    <div class="clearInput">
+      <div class="cross_1"></div>
+      <div class="cross_2"></div>
+    </div>
+    <div class="hide">
+      <div class="addPickup">
+        <div class="cross_3"></div>
+        <div class="cross_4"></div>
+      </div>
+    </div>
+    <div class="endDot"></div>
+    <input class="text" id="end_location_id" placeholder="Enter Drop off Location">
+    <div class="clearInput2">
+      <div class="cross_5"></div>
+      <div class="cross_6"></div>
+    </div>
+    <div class="hide">
+      <div class="addDropoff">
+        <div class="cross_7"></div>
+        <div class="cross_8"></div>
+      </div>
+    </div>
+  </div>
+  <div class="hide">
+    <div class="map_location_pin_div">
+      <div class="location_pin_wrapper">
+        <div class="location_pin">
+          <div class="location_pin_inner">
+            <span>SELECT LOCATION</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footerDiv">
+    <div class="hide">
+      <div id="mode-selector">
+        <input type="radio" name="type" id="changemode-walking">
+        <label for="changemode-walking">Walking</label>
+        <input type="radio" name="type" id="changemode-transit">
+        <label for="changemode-transit">Transit</label>
+        <input type="radio" name="type" id="changemode-driving" checked="checked">
+        <label for="changemode-driving">Driving</label>
+      </div>
+    </div>
+    <div class="bottom_button_div">
+      <div class="bookbuttondiv">Book Later</div>
+      <div class="bookbuttondiv">Book Now</div>
+      <div class="wrapper"><button><a href="./homepage.html">Return to home</a></button></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="trip.js"></script>
+</body>
+
+</html>

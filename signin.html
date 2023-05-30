@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5bf8f9df2f.js" crossorigin="anonymous"></script>
+</head>
+<div class="logo">
+    <header>
+        <a href="homepage.html"><img style="width: 350px;" src="./images/logo-no-background.png" alt="logo"></a>
+    </header>
+</div>
+
+<body>
+
+    <div class="container right-panel-active">
+
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="./signup.php" method="post">
+                <h2 class="form__title">Sign Up</h2>
+                <input type="text" class="input" name="name" />
+                <input type="email"  class="input" name="email"/>
+                <input type="password" class="input" name="password"/>
+                <input type="tel"  class="input" name="num"/>
+                <input type="submit" value="Submit" class="btn">
+                <div class="login-signup">
+                    <span class="text">
+                        <a href="./screen.html" class="text signup-link">Register</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+
+        <!-- Sign In -->
+        <div class="container__form container--signin">
+            <form action="./PHP/login.php" class="form" id="form2">
+                <h2 class="form__title">Sign In</h2>
+                <input type="text" class="input" name="name"/>
+                <input type="password"  class="input" name="password"/>
+                <a href="#" class="link">Forgot your password?</a>
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </div>
+
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascriptfile.js"></script>
+    <footer class="footer">
+        <div class="container_2">
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p>
+                    <i class="fa fa-phone"></i> +1 123 456 7890
+                </p>
+                <p>
+                    <i class="fa fa-instagram"></i> @petscare
+                </p>
+                <p>
+                    <i class="fa fa-twitter"></i> @pets.care
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i> petscare@mail.com
+                </p>
+            </div>
+            <div class="info">
+                <h3>Information</h3>
+                <ul>
+                    <p style="font-size: 14px;"><i>Every booking with us comes with our 100% guarantee<br> of quality
+                            care, fun and safe time for your
+                            pets.<br> If you're not happy, neither are we!</i></p>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="./images/logo/pets-care-website-favicon-color.png" alt="Company Logo">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
